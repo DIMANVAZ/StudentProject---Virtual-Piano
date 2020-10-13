@@ -1,0 +1,47 @@
+ .container div{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    margin: 0; height:100vh;
+    display:flex; justify-content: center; align-items: center;
+    }
+
+.container{ /* для контейнера, который содержит оба Дива с Ч и Б клавишами */
+    display: inline-block; /* инлайн-блок у этого контейнера - тоже требование задания */
+    align-content: center;
+    position: relative;
+    }
+
+.black-keys{ /* для чёрных клавиш */
+    position: absolute;
+    top:0;
+}
+
+kbd{ /* для любых kbd */
+    border: 2px solid black;
+    border-radius: 3px;
+    text-align: center;
+    justify-content: end;
+    font-weight: bold;
+}
+
+.white-keys kbd{ /* для БЕЛЫХ kbd */
+    padding: 250px 20px 10px;
+    background-color: white;
+}
+
+.black-keys kbd{ /* для ЧЁРНЫХ kbd */
+    padding: 150px 10px 10px;
+    margin-left: 20px;
+    background-color: black; color: white;
+}
+
+.black-keys kbd:nth-child(1){
+    margin-left: 35px;
+ }
+
+ .black-keys kbd:nth-child(2){
+     margin-right: 52px;
+ }
